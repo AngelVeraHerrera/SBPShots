@@ -1,8 +1,8 @@
 <div align="center">
 
-# TopasShots
+# SBP Shots
 
-**Screenshot automation tool for TOPAS sub-bottom profiler monitoring during oceanographic surveys.**
+**Screenshot automation tool for sub-bottom profiler monitoring during oceanographic surveys.**
 
 [![C++20][cpp-shield]][cpp-url]
 [![Qt 6][qt-shield]][qt-url]
@@ -16,12 +16,12 @@
 
 ## About The Project
 
-TopasShots is a lightweight Windows utility that takes structured, timestamped
+SBP Shots is a lightweight Windows utility that takes structured, timestamped
 screenshots of the **Kongsberg TOPAS** sub-bottom profiler display (or any other window or
 screen) while an oceanographic survey is under way.
 
 During long acquisition lines the operator needs a consistent visual record of the profile
-without babysitting the acquisition console. TopasShots automates this: it captures the
+without babysitting the acquisition console. SBP Shots automates this: it captures the
 configured region at a fixed interval, names every image deterministically, and files it
 into a clean campaign tree organised by survey line and transit. Each capture is stored as
 a **full frame** plus an **ROI crop**, so both the context and the area of interest are
@@ -29,7 +29,7 @@ preserved.
 
 <div align="center">
 
-![TopasShots running over the TOPAS display](TopasShots/manual/images/gui_over_topas.png)
+![SBP Shots running over a sub-bottom profiler display](SBPShots/manual/images/gui_over_sbp.png)
 
 </div>
 
@@ -38,7 +38,7 @@ been used operationally during survey campaigns.
 
 > [!NOTE]
 > A full walkthrough of every control is available in the
-> [User Manual](TopasShots/manual/USER_MANUAL.md).
+> [User Manual](SBPShots/manual/USER_MANUAL.md).
 
 ## Features
 
@@ -72,7 +72,7 @@ cmake --preset msvc2022-release
 cmake --build --preset msvc2022-release
 ```
 
-Alternatively, open `TopasShots/CMakeLists.txt` directly in Qt Creator and build from
+Alternatively, open `SBPShots/CMakeLists.txt` directly in Qt Creator and build from
 there.
 
 Deployable binaries are produced under:
@@ -97,7 +97,7 @@ Captures are written as image pairs using the following layout:
 - `source` is `manual` or `auto`; `frame` is `full` or `crop`.
 - Example: `ZEEE2026/L073A/auto/crop/ZEEE2026_L073A_auto_crop_20260608_152854_377_start.JPG`
 
-See the [User Manual](TopasShots/manual/USER_MANUAL.md) for the complete control reference
+See the [User Manual](SBPShots/manual/USER_MANUAL.md) for the complete control reference
 and example output.
 
 > [!WARNING]
@@ -107,8 +107,8 @@ and example output.
 
 ## Versioning
 
-Releases use a calendar-based `YYMM.build` scheme. The current release, **2606.2**,
-corresponds to the second build of June 2026.
+Releases use a calendar-based `YYMM.build` scheme. The current release, **2606.3**,
+corresponds to the third build of June 2026.
 
 ## License
 
@@ -137,5 +137,5 @@ for more information.
 [windows-url]: https://learn.microsoft.com/windows/
 [license-shield]: https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge
 [license-url]: LICENSE
-[version-shield]: https://img.shields.io/badge/Version-2606.2-orange.svg?style=for-the-badge
+[version-shield]: https://img.shields.io/badge/Version-2606.3-orange.svg?style=for-the-badge
 [version-url]: https://github.com/AngelVeraHerrera/TopasShots/releases
