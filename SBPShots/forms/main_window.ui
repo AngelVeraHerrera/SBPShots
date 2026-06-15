@@ -3235,7 +3235,7 @@ font: 12px &quot;Open Sans Semibold&quot;;
 }</string>
             </property>
             <property name="text">
-             <string>For my new friends &lt;3 - ZEEE 22-26</string>
+             <string>For my new friends &lt;3</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>

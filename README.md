@@ -95,7 +95,7 @@ Captures are written as image pairs using the following layout:
 ```
 
 - `source` is `manual` or `auto`; `frame` is `full` or `crop`.
-- Example: `ZEEE2026/L073A/auto/crop/ZEEE2026_L073A_auto_crop_20260608_152854_377_start.JPG`
+- Example: `DEMO2026/L073A/auto/crop/DEMO2026_L073A_auto_crop_20260608_152854_377_start.JPG`
 
 See the [User Manual](SBPShots/manual/USER_MANUAL.md) for the complete control reference
 and example output.

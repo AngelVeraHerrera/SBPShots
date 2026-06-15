@@ -29,7 +29,7 @@ that it is capturing:
 ## 2. Quick start
 
 1. Set the **Base Path** where all captures will be stored.
-2. Fill in the **Campaign ID** (for example `ZEEE-26`).
+2. Fill in the **Campaign ID** (for example `DEMO2026`).
 3. Choose the capture **TARGET** (a screen or a window).
 4. Define the **ROI** (the rectangular crop you want from each capture).
 5. Set the current section with the navigation arrows (line/transit + number + suffix).
@@ -74,7 +74,7 @@ It is shown in green for survey **Lines** and in amber for **Transits**.
 
 | Field | Meaning |
 |---|---|
-| **Campaign ID** | Top-level folder name for the survey (e.g. `ZEEE-26`). |
+| **Campaign ID** | Top-level folder name for the survey (e.g. `DEMO2026`). |
 | **L. Prfx** | Prefix used for survey-line sections (default `L`). |
 | **T. Prfx** | Prefix used for transit sections (default `TL`). |
 | **Nº** | Current line/transit number (zero-padded to three digits). |
@@ -128,7 +128,7 @@ The filename itself is:
 Example (an automatic crop, first shot of the section):
 
 ```
-ZEEE2026/L073A/auto/crop/ZEEE2026_L073A_auto_crop_20260608_152854_377_start.JPG
+DEMO2026/L073A/auto/crop/DEMO2026_L073A_auto_crop_20260608_152854_377_start.JPG
 ```
 
 ### Start and end markers
@@ -152,7 +152,7 @@ This makes it trivial to find the beginning and end of every line in the archive
 
 A typical cropped capture of the sub-bottom profile (ROI only):
 
-![Example cropped capture](shot_examples/ZEEE-2026/L037A/full/ZEEE2026_L073A_auto_full_20260608_152854_376_start.JPG)
+![Example cropped capture](shot_examples/DEMO2026/L037A/full/DEMO2026_L073A_auto_full_20260608_152854_376_start.JPG)
 
 A full set of example captures for one line is included under
 [`shot_examples/`](shot_examples/).
