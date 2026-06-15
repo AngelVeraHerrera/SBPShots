@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>fonts/OpenSans-Bold.ttf</file>
+        <file>fonts/OpenSans-Regular.ttf</file>
+        <file>fonts/OpenSans-SemiBold.ttf</file>
+        <file>images/easter0.jpg</file>
+        <file>images/easter1.jpg</file>
+        <file>images/photo.png</file>
+        <file>images/eye.png</file>
+        <file>icons/icon.ico</file>
+        <file>images/easter2.jpg</file>
+    </qresource>
+</RCC>
