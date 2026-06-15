@@ -141,9 +141,33 @@ file(GLOB_RECURSE PROJECT_SCRIPTS CONFIGURE_DEPENDS
 set(PROJECT_WINDOWS_RESOURCES)
 
 if(WIN32)
+    # Collect any static .rc files (templates *.rc.in are handled separately below).
     file(GLOB_RECURSE PROJECT_WINDOWS_RESOURCES CONFIGURE_DEPENDS
         ${PROJECT_RESOURCES_DIR}/*.rc
     )
+
+    # Generate the versioned application resource (icon + VERSIONINFO) from a template, so the version embedded in
+    # the executable file properties always matches the CMake project version. A two-component version such as
+    # 2606.2 leaves PROJECT_VERSION_PATCH empty, so fall back to 0 for the numeric FILEVERSION/PRODUCTVERSION fields.
+    set(TOPASSHOTS_RC_VERSION_MAJOR ${PROJECT_VERSION_MAJOR})
+    set(TOPASSHOTS_RC_VERSION_MINOR ${PROJECT_VERSION_MINOR})
+
+    if(NOT DEFINED PROJECT_VERSION_PATCH OR PROJECT_VERSION_PATCH STREQUAL "")
+        set(TOPASSHOTS_RC_VERSION_PATCH 0)
+    else()
+        set(TOPASSHOTS_RC_VERSION_PATCH ${PROJECT_VERSION_PATCH})
+    endif()
+
+    set(TOPASSHOTS_RC_ICON_PATH "${PROJECT_RESOURCES_DIR}/icons/icon.ico")
+
+    set(TOPASSHOTS_GENERATED_RC ${CMAKE_CURRENT_BINARY_DIR}/topasshots_version.rc)
+    configure_file(
+        ${PROJECT_RESOURCES_DIR}/windows/app_icon.rc.in
+        ${TOPASSHOTS_GENERATED_RC}
+        @ONLY
+    )
+
+    list(APPEND PROJECT_WINDOWS_RESOURCES ${TOPASSHOTS_GENERATED_RC})
 endif()
 
 set(PROJECT_LICENSE_FILE ${CMAKE_CURRENT_SOURCE_DIR}/../LICENSE)
@@ -259,7 +283,14 @@ source_group(
 source_group(
     TREE ${PROJECT_RESOURCES_DIR}
     PREFIX "Resources"
-    FILES ${PROJECT_RESOURCES} ${PROJECT_WINDOWS_RESOURCES}
+    FILES ${PROJECT_RESOURCES}
+)
+
+# Windows resources include the generated VERSIONINFO .rc in the build tree, which is not under the
+# resources directory, so group it with a flat (non-TREE) source_group.
+source_group(
+    "Resources"
+    FILES ${PROJECT_WINDOWS_RESOURCES}
 )
 
 source_group(
