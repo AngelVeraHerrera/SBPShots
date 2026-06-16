@@ -1,6 +1,7 @@
 # Folders.
 *build*/
 *buildtrees*/
+*.qtcreator*/
 *product*/
 *deploy*/
 *todo*/

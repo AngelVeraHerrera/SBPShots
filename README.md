@@ -17,7 +17,7 @@
 ## About The Project
 
 SBP Shots is a lightweight Windows utility that takes structured, timestamped
-screenshots of the **Kongsberg TOPAS** sub-bottom profiler display (or any other window or
+screenshots of any sub-bottom profiler display (or any other window or
 screen) while an oceanographic survey is under way.
 
 During long acquisition lines the operator needs a consistent visual record of the profile
@@ -29,11 +29,11 @@ preserved.
 
 <div align="center">
 
-![SBP Shots running over a sub-bottom profiler display](SBPShots/manual/images/gui_over_sbp.png)
+![SBP Shots running over a sub-bottom profiler display](SBPShots/manual/images/SBPShots_working.JPG)
 
 </div>
 
-The tool was developed at the **Real Instituto y Observatorio de la Armada (ROA)** and has
+The tool was developed by engineers from **Spanish Navy Observatory (ROA)** and has
 been used operationally during survey campaigns.
 
 > [!NOTE]
@@ -95,7 +95,7 @@ Captures are written as image pairs using the following layout:
 ```
 
 - `source` is `manual` or `auto`; `frame` is `full` or `crop`.
-- Example: `DEMO2026/L073A/auto/crop/DEMO2026_L073A_auto_crop_20260608_152854_377_start.JPG`
+- Example: `DEMO-2026/L001A/auto/crop/DEMO-2026_L001A_auto_crop_20260615_221909_761_start.JPG`
 
 See the [User Manual](SBPShots/manual/USER_MANUAL.md) for the complete control reference
 and example output.
@@ -122,9 +122,8 @@ for more information.
 
 ## Acknowledgments
 
-- Real Instituto y Observatorio de la Armada (ROA)
+- Spanish Navy Observatory (ROA)
 - The [Qt Project](https://www.qt.io/)
-- [Windows Graphics Capture](https://learn.microsoft.com/windows/uwp/audio-video-camera/screen-capture)
 - [Shields.io](https://shields.io)
 - [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 
@@ -138,4 +137,4 @@ for more information.
 [license-shield]: https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge
 [license-url]: LICENSE
 [version-shield]: https://img.shields.io/badge/Version-2606.3-orange.svg?style=for-the-badge
-[version-url]: https://github.com/AngelVeraHerrera/TopasShots/releases
+[version-url]: https://github.com/AngelVeraHerrera/SBPShots/releases

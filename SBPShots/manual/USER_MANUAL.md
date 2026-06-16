@@ -17,19 +17,19 @@ running.
 SBP Shots opens as a single always-resizable window. It can be kept on top of every
 other application so it never gets lost behind the acquisition software.
 
-![SBP Shots main window](images/gui_standalone.png)
+![SBP Shots main window](images/SBPShots.png)
 
 In normal use it sits in a corner of the screen, on top of the sub-bottom profiler acquisition display
 that it is capturing:
 
-![SBP Shots running over a sub-bottom profiler display](images/gui_over_sbp.png)
+![SBP Shots running over a sub-bottom profiler display](images/SBPShots_working.JPG)
 
 ---
 
 ## 2. Quick start
 
 1. Set the **Base Path** where all captures will be stored.
-2. Fill in the **Campaign ID** (for example `DEMO2026`).
+2. Fill in the **Campaign ID** (for example `DEMO-2026`).
 3. Choose the capture **TARGET** (a screen or a window).
 4. Define the **ROI** (the rectangular crop you want from each capture).
 5. Set the current section with the navigation arrows (line/transit + number + suffix).
@@ -74,7 +74,7 @@ It is shown in green for survey **Lines** and in amber for **Transits**.
 
 | Field | Meaning |
 |---|---|
-| **Campaign ID** | Top-level folder name for the survey (e.g. `DEMO2026`). |
+| **Campaign ID** | Top-level folder name for the survey (e.g. `DEMO-2026`). |
 | **L. Prfx** | Prefix used for survey-line sections (default `L`). |
 | **T. Prfx** | Prefix used for transit sections (default `TL`). |
 | **Nº** | Current line/transit number (zero-padded to three digits). |
@@ -128,7 +128,7 @@ The filename itself is:
 Example (an automatic crop, first shot of the section):
 
 ```
-DEMO2026/L073A/auto/crop/DEMO2026_L073A_auto_crop_20260608_152854_377_start.JPG
+DEMO-2026/L001A/auto/crop/DEMO-2026_L001A_auto_crop_20260615_221909_761_start.JPG
 ```
 
 ### Start and end markers
@@ -152,7 +152,7 @@ This makes it trivial to find the beginning and end of every line in the archive
 
 A typical cropped capture of the sub-bottom profile (ROI only):
 
-![Example cropped capture](shot_examples/DEMO2026/L037A/full/DEMO2026_L073A_auto_full_20260608_152854_376_start.JPG)
+![Example cropped capture](shot_examples/DEMO-2026/L001A/auto/crop/DEMO-2026_L001A_auto_crop_20260615_221909_761_start.JPG)
 
 A full set of example captures for one line is included under
 [`shot_examples/`](shot_examples/).

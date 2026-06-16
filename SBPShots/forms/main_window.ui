@@ -742,7 +742,7 @@ font: 16px &quot;Open Sans Semibold&quot;;
 }</string>
             </property>
             <property name="text">
-             <string>-  SBP Screen Capture Tool  -</string>
+             <string>-  Sub-Bottom Profiler Screen Capture Tool  -</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignmentFlag::AlignCenter</set>
