@@ -2,7 +2,7 @@
 
 # SBP Shots
 
-**Screenshot automation tool for sub-bottom profiler monitoring during oceanographic surveys.**
+**Screenshot automation tool for sub-bottom profiler (SBP) monitoring during oceanographic surveys.**
 
 [![C++20][cpp-shield]][cpp-url]
 [![Qt 6][qt-shield]][qt-url]
@@ -33,7 +33,7 @@ preserved.
 
 </div>
 
-The tool was developed by engineers from **Spanish Navy Observatory (ROA)** and has
+The tool was developed by engineers from **Real Instituto y Observatorio de la Armada (ROA)** and has
 been used operationally during survey campaigns.
 
 > [!NOTE]
@@ -122,7 +122,7 @@ for more information.
 
 ## Acknowledgments
 
-- Spanish Navy Observatory (ROA)
+- Real Instituto y Observatorio de la Armada (ROA)
 - The [Qt Project](https://www.qt.io/)
 - [Shields.io](https://shields.io)
 - [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
